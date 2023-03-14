@@ -131,6 +131,8 @@ const select = function (playerChoice) {
   }
 };
 
+window.select = select;
+
 const resetAll = function () {
   playerScore = 0;
   computerScore = 0;
@@ -142,4 +144,6 @@ const resetAll = function () {
   resetChoice();
 };
 
-// resetAll();
+resetAll();
+
+window.resetAll = resetAll;
